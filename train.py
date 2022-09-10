@@ -26,7 +26,7 @@ class N_gram:
             dirs = listdir(input_path)
             for file in dirs:
                 with open(input_path + "\\" + file, "r",
-                          encoding='cp1251') as f:
+                          encoding='utf-8') as f:
                     text = f.read()
                     self.formatting_text(text)
         for key in self.model_data.keys():
